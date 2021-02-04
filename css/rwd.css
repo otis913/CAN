@@ -1,0 +1,937 @@
+/* -----------1024斷點--------- */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+  a {
+    font-size: 4vw;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-standard {
+    width: 300px;
+  }
+  header {
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background-color: #a6a6a6;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 50px;
+    line-height: 70px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 7.5vw;
+    color: #333;
+    line-height: 70px;
+    margin-left: 1em;
+    z-index: 200;
+  }
+
+  header .maun_sprite {
+    display: flex;
+    flex-direction: column;
+    background-color: #a6a6a6;
+    justify-content: space-between;
+
+    position: fixed;
+    right: 0px;
+    top: 0;
+
+    /* transition: 0.5s; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #a6a6a6;
+
+    display: none;
+  }
+
+  header .maun_sprite .menu {
+    float: none;
+    margin: 0;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a6a6a6;
+  }
+
+  header .maun_sprite .menu li {
+    float: none;
+    width: 100%;
+    height: auto;
+    line-height: 120px;
+    margin: 0;
+
+    border-bottom: 1px solid #333;
+  }
+
+  header .maun_sprite .menu li a {
+    margin: 0 auto;
+    height: auto;
+  }
+  header .maun_sprite .menu li:first-child a {
+  }
+
+  header .maun_sprite ol {
+    display: none;
+    width: 100%;
+    position: relative;
+  }
+  header .maun_sprite ol li {
+    z-index: 110;
+  }
+  header .maun_sprite ol li:first-child {
+    border-top: 1px solid #333;
+  }
+  header .maun_sprite ol li:last-child {
+    border-bottom: 1px solid #333;
+  }
+  header .maun_sprite .sprite {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a6a6a6;
+    margin-bottom: 100px;
+  }
+  header .maun_sprite .sprite ul {
+    /* border-top: 1px solid #333; */
+  }
+
+  header .maun_sprite .sprite li a {
+  }
+  header .maun_sprite .menu li:hover a {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  header .maun_sprite li:nth-child(1):hover ol {
+    display: none;
+  }
+  /* .traning-btn:hover ol {
+    display: flex;
+  } */
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  footer ul {
+    width: auto;
+    padding-top: 5px;
+  }
+  footer p {
+    display: block;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  footer a {
+    font-size: 3vw;
+  }
+
+  /* ----------首頁 ----------*/
+  /* -------大圖--------- */
+  .main-pic {
+    margin-top: 70px;
+    /* position: static; */
+
+    width: 100%;
+    height: auto;
+  }
+  .main-pic img {
+    height: auto;
+    position: relative;
+
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
+  .main-pic h1 {
+    position: absolute;
+    left: 30px;
+    top: 300px;
+    font-size: 7vw;
+  }
+  /* ------calisthenics介紹------ */
+  .introduction {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .introduct-rwd {
+    width: 100%;
+  }
+
+  .introd-pic {
+    width: 100%;
+    display: flex;
+  }
+  .introd-pic .introd-pic-RWD1 {
+    display: block;
+    margin: 10px 10px;
+    width: calc(50% - 20px);
+    height: calc(50% - 20px);
+  }
+  .introd-pic .introd-pic-RWD2 {
+    display: block;
+    margin: 10px 10px;
+    width: calc(50% - 20px);
+    height: calc(50% - 20px);
+  }
+  .introd-pic {
+    opacity: 0;
+  }
+
+  .introd-pic ul {
+    display: none;
+  }
+  .introd-pic ul li {
+  }
+
+  .introd-main {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .introd-main h1 {
+    margin-bottom: 0;
+    font-size: 6vw;
+    text-align: center;
+  }
+  .introd-main p {
+    text-indent: 1em;
+    font-size: 3vw;
+    margin: 0 20px;
+    padding-bottom: 20px;
+  }
+  /* -------現代街頭健身-------  */
+
+  .str-workout-main {
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .str-workout-main h1 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .str-workout-main p {
+    text-indent: 1em;
+    font-size: 3vw;
+    margin: 0 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  /* -------blog,training-------  */
+  .nav-blog-novtrain {
+  }
+  .nav-blog {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+  .nav-blog a {
+    position: static;
+    order: 2;
+    font-size: 4vw;
+  }
+  .nav-blog img {
+    height: 60%;
+    width: 70%;
+    margin: 20px auto 5px;
+    position: static;
+    order: 1;
+  }
+  .nav-novtrain {
+    width: 40%;
+    height: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-novtrain a {
+    position: static;
+    margin: 0 auto;
+    font-size: 4vw;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #d7d7d9;
+    order: 2;
+    line-height: 0;
+  }
+
+  .nav-novtrain img {
+    height: 100%;
+    width: 75%;
+    margin: 20px auto 20px;
+    position: static;
+    order: 1;
+  }
+  /* -----酷炫招式----- */
+  .nav-master {
+    width: 100%;
+  }
+  .nav-master h1 {
+  }
+  .nav-master ul {
+    flex-wrap: wrap;
+  }
+  .nav-master ul li {
+    filter: saturate(1);
+    width: 50%;
+    height: auto;
+  }
+
+  .nav-master a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    /* font-size: 5vw; */
+    font-weight: bold;
+    color: #f2f2f2;
+    text-shadow: 3px 3px 3px #595959;
+  }
+  .nav-master ul li:hover a {
+    font-size: 5vw;
+  }
+  .nav-master ul li:nth-child(4):hover a {
+    color: #f2f2f2;
+    text-shadow: 3px 3px 3px #595959;
+  }
+  /* -----商品區----- */
+  .product {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  .product ul {
+    margin: 0 10px;
+  }
+
+  .product li img {
+    filter: sepia(0);
+    width: 100%;
+  }
+  .product li:hover img {
+    border: none;
+  }
+  .product ul + a {
+    width: 100%;
+    font-size: 4vw;
+    background-color: transparent;
+    color: #d7d7d9;
+    margin-top: 0;
+  }
+  /* ------神人區------ */
+  .godman {
+    width: 100%;
+    height: 100%;
+  }
+  .godman h1 {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .godman ul {
+    width: 100%;
+  }
+  .godman li {
+    width: 100%;
+    height: 100%;
+    perspective: none;
+    transform-style: unset;
+  }
+  .godman img {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+  }
+  .godman a {
+    margin-bottom: 0;
+  }
+
+  .godman .front {
+    perspective: none;
+    transform-style: unset;
+  }
+
+  .godman .back {
+    display: none;
+    transform: none;
+  }
+
+  .godman-card {
+    position: static;
+  }
+  .godman-card-1:hover .front {
+    transform: none;
+  }
+  .godman-card-2:hover .front {
+    transform: none;
+  }
+  .godman-card-3:hover .front {
+    transform: none;
+  }
+
+  /* -------部落格總攬 -------*/
+  .blog-list {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .blog-list ul {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .blog-list ul li {
+    width: 50%;
+    margin-bottom: 8px;
+  }
+  .nav-standardcard {
+    width: calc(100% - 20px);
+    height: 100%;
+    margin: 10px 10px;
+    border: 1px solid #f2f2f2;
+  }
+
+  .blog-list-pic {
+  }
+  .blog-list .blog-list-pic img {
+    width: 95%;
+    height: 100%;
+  }
+  .blog-list-text {
+  }
+
+  .blog-list .blog-list-text h3 {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .blog-list .blog-list-text a {
+    font-size: 2vw;
+  }
+  .blog-list .nav-standardcard:hover {
+    box-shadow: none;
+  }
+  /* -----聯繫我們----- */
+  .contact-us-list {
+    margin-top: 70px;
+    clear: both;
+  }
+  .contact-us-main {
+    clear: both;
+  }
+  .contact-us-list h3 {
+    font-size: 5vw;
+  }
+  .contact-us-left h3 {
+    margin: 10px;
+    text-align: left;
+  }
+  .contact-us-left p {
+    margin: 10px;
+    text-align: left;
+  }
+  .contact-us-right ul {
+    width: 100%;
+  }
+  .contact-us-message {
+    clear: both;
+  }
+  /* -----大神連結----- */
+  .godman-block1 {
+    margin-top: 70px;
+    padding-top: 0;
+  }
+  .godman-block1 h1 {
+    font-size: 5vw;
+  }
+  .nav1-godman {
+    width: 100%;
+    height: 100%;
+  }
+  .nav1-godman ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .nav1-godman li {
+    position: static;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .nav1-godman ul li h3 {
+    position: static;
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+  .nav1-godman ul li a img {
+    position: static;
+    margin: 0 10px;
+    width: calc(80% - 20px);
+    height: 80%;
+  }
+
+  .andrea-hover {
+    display: none;
+  }
+  .erik-hover {
+    display: none;
+  }
+  .mike-hover {
+    display: none;
+  }
+  .Maksim-hover {
+    display: none;
+  }
+  .osvaldo-hover {
+    display: none;
+  }
+  .giampaolo-hover {
+    display: none;
+  }
+  .godman-list1:hover .andrea {
+    transform: none;
+    opacity: 1;
+  }
+  .godman-list2:hover .erik {
+    transform: none;
+    opacity: 1;
+  }
+  .godman-list3:hover .mike {
+    transform: none;
+    opacity: 1;
+  }
+  .godman-list4:hover .Maksim {
+    transform: none;
+    opacity: 1;
+  }
+  .godman-list5:hover .osvaldo {
+    transform: none;
+    opacity: 1;
+  }
+  .godman-list6:hover .giampaolo {
+    transform: none;
+    opacity: 1;
+  }
+  /* -----商品區總攬----- */
+  .product-list-1 {
+    margin-top: 70px;
+  }
+  .product-list-1 ul {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .product-list-1 li {
+    /* margin: 0 10px; */
+    /* width: calc(45% - 20px); */
+    width: 50%;
+    height: 100%;
+    /* background-size: cover; */
+  }
+  .product-list-1 h1 {
+    font-size: 5vw;
+    margin: 0;
+  }
+  .product-list-1 li a {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    transition: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .door-pull-up:hover {
+    background-image: url(../img/product/product-door-pull-up-bar-360-360.png);
+  }
+
+  .parallettes:hover {
+    background-image: url(../img/product/parallettes-360-360.png);
+  }
+
+  .bands:hover {
+    background-image: url(../img/product/bands-360-360.png);
+  }
+
+  .push-up-bars:hover {
+    background-image: url(../img/product/push-up-bars-360-360.png);
+  }
+
+  .rings:hover {
+    background-image: url(../img/product/rings-360-360.png);
+  }
+
+  .weight-vest:hover {
+    background-image: url(../img/product/weight-vest-360-360.png);
+  }
+
+  /* ----常見問題----- */
+  .nev-questions-list {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  .nev-questions-list h1 {
+    font-size: 5vw;
+    padding-top: 0;
+  }
+  .nev-questions-list ul {
+    width: 100%;
+  }
+  .nev-questions-list li {
+    width: 100%;
+  }
+  .qa-title {
+    font-size: 3vw;
+    width: 80%;
+
+    margin: 6px auto;
+  }
+  .qa-content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3vw;
+    border-bottom: none;
+  }
+
+  /* ---門上槓產品區--- */
+  .Bread-Crumbs {
+    width: 100%;
+    margin-top: 70px;
+    height: 50px;
+  }
+  .Bread-Crumbs a {
+    font-size: 2vw;
+  }
+  .Bread-Crumbs p {
+    font-size: 2vw;
+  }
+  .nav-standard {
+    width: 50%;
+    height: 100%;
+    margin: 0 10px;
+  }
+  .nev1-door-pull-up-bar-text {
+    width: 100%;
+    margin-top: 10px auto 0;
+  }
+  .nev1-door-pull-up-bar-text h1 {
+    font-size: 4vw;
+    margin-bottom: 0;
+  }
+  .nev1-door-pull-up-bar-text-p {
+    width: 100%;
+  }
+  .nev1-door-pull-up-bar-text-p p {
+    font-size: 3vw;
+    margin: 8px 8px;
+  }
+  .nev1-door-pull-up-bar-text-p p:nth-child(2) {
+    font-size: 3vw;
+    width: 40%;
+  }
+  .nev1-door-pull-up-bar-pic {
+    width: 100%;
+  }
+  .nev1-door-pull-up-bar-pic img {
+    width: 80%;
+  }
+  .nev1-door-pull-up-bar-pic ul {
+    width: 100%;
+  }
+  .nev1-door-pull-up-bar-pic ul li {
+    width: 30%;
+  }
+  .nev1-door-pull-up-bar-pic ul img {
+    opacity: 1;
+  }
+  .shop-btn {
+    margin: 20px 0;
+  }
+  .purchase {
+    width: 35%;
+    height: 100%;
+    font-size: 3vw;
+  }
+  .shpo-cart {
+    width: 35%;
+    height: 100%;
+    font-size: 3vw;
+  }
+  .nev1-door-pull-up-bar-product-2-description h1 {
+    font-size: 4vw;
+  }
+  .nev1-door-pull-up-bar-product-2-description ul {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .nev1-door-pull-up-bar-product-2-description ul li {
+    margin: 0 2px;
+    width: calc(100% - 4px);
+    font-size: 3vw;
+  }
+  .nev1-door-pull-up-bar-product-2-description ul li img {
+    width: 100%;
+  }
+  .nev1-door-pull-up-bar-product-2-description p {
+    padding: 0;
+    font-size: 3vw;
+    margin: 0 10px;
+  }
+  .nev1-door-pull-up-bar-product-3-description {
+    flex-direction: column;
+  }
+  .door-pull-up-bar-product-description table {
+    font-size: 3vw;
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+  }
+  .door-pull-up-bar-product-description tr {
+    width: 45%;
+  }
+  .door-pull-up-bar-product-description td {
+    width: 45%;
+  }
+  .nev1-door-pull-up-bar-product-2-description > p:last-child {
+    font-size: 3vw;
+    padding-bottom: 5px;
+  }
+  /* ----開始訓練/新手訓練---- */
+  .train-intro {
+    margin-top: 70px;
+  }
+  .train-intro ul {
+    width: 100%;
+  }
+  .train-intro ul li {
+    width: 50%;
+    height: auto;
+  }
+  .train-intro-pic {
+    margin: 10px 10px;
+  }
+  .train-intro-pic img {
+    width: 100%;
+  }
+  .train-intro-text h1 {
+    font-size: 4vw;
+  }
+  .train-intro-text p + p {
+    font-size: 3vw;
+  }
+  .train-novic ul {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .train-novic ul li {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: auto;
+  }
+
+  .novice-push-text p {
+    margin: 0 20px;
+  }
+  .train-novic iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+  }
+  .novice-push-film {
+    width: 100%;
+  }
+  .train-chest-film {
+    width: 100%;
+  }
+  .basic-pull-film {
+    width: 100%;
+  }
+  .basic-pullup-film {
+    width: 100%;
+  }
+  .pullup-mistake-film {
+    width: 100%;
+  }
+  .no1_text {
+    order: 1;
+  }
+  .no2_film {
+    order: 2;
+  }
+  .no3_film {
+    order: 4;
+  }
+  .no4_text {
+    order: 3;
+  }
+  .no5_text {
+    order: 5;
+  }
+  .no6_film {
+    order: 6;
+  }
+  .no7_film {
+    order: 8;
+  }
+  .no8_text {
+    order: 7;
+  }
+  .no9_text {
+    order: 9;
+  }
+  .no10_film {
+    order: 10;
+  }
+  /* ---2020減肥方法---- */
+  .wrapper .blog-list-btn a {
+    border-bottom: none;
+    padding-bottom: unset;
+    /* color: #8c2f1b; */
+  }
+
+  .new2020-losewight {
+    margin: 70px 10px 0;
+    width: calc(100% - 20px);
+  }
+  .new2020-losewight img {
+    width: 50%;
+  }
+  .elseblog-recommend {
+    width: 100%;
+  }
+  .blog-list2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-2020card {
+    width: 100%;
+  }
+  .blog-list-pic {
+    width: 100%;
+  }
+  .blog-list-text h3 {
+    font-size: 4vw;
+    text-align: center;
+    margin: 10px 0 0 10px;
+  }
+
+  .blog-list-text a {
+    font-size: 3vw;
+    text-align: left;
+    color: #f2f2f2;
+    margin: 10px;
+  }
+
+  .blog-list-pic img {
+    width: 95%;
+    height: 100%;
+    margin-top: 10px;
+    border: 1px solid #f2f2f2;
+  }
+
+  /* ---網站還在架構中--- */
+  .construct {
+    margin-top: 70px;
+  }
+  .nev-construct {
+    width: 100%;
+    height: auto;
+  }
+  .nev-construct h3 {
+    font-size: 5vw;
+    padding-bottom: 60px;
+  }
+}
+
+/* -----------796斷點--------- */
+
+@media screen and (max-width: 796px) {
+  /* 首頁 */
+  .main-pic h1 {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    font-size: 7vw;
+  }
+}
+/* -----------550斷點--------- */
+@media screen and (max-width: 550px) {
+  /* 首頁 */
+  .main-pic h1 {
+    position: absolute;
+    left: 30px;
+    top: 160px;
+    font-size: 7vw;
+  }
+  /* 部落格總攬 */
+  .blog-list ul li {
+    width: 100%;
+  }
+  .blog-list .blog-list-text h3 {
+    font-size: 4vw;
+  }
+  .blog-list .blog-list-text a {
+    font-size: 3vw;
+  }
+
+  /* 聯絡我們 */
+  .contact-us-main {
+    flex-direction: column;
+  }
+  .contact-us-left {
+    width: 100%;
+  }
+  .contact-us-left h3 {
+    text-align: center;
+    margin: 0;
+  }
+  .contact-us-left p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .contact-us-right {
+    width: 100%;
+  }
+}
+/* -----------414斷點--------- */
+@media screen and (max-width: 414px) {
+  /* 首頁 */
+  .main-pic h1 {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    font-size: 7vw;
+  }
+}

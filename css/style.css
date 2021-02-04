@@ -1,0 +1,1736 @@
+@import url("reset.css");
+
+body {
+  font-family: Ariel, 微軟正黑體;
+  background-color: #0d0d0d;
+  line-height: 1.8;
+  cursor: default;
+}
+h1 {
+  font-size: 48px;
+  color: #bf7b3f;
+  font-weight: bold;
+}
+h2 {
+  font-size: 40px;
+  color: #bf7b3f;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+  color: #bf7b3f;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  color: #f2f2f2;
+}
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+tr {
+  color: #f2f2f2;
+}
+td {
+  color: #f2f2f2;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*-------------首頁---標題---------------*/
+header {
+  width: 1200px;
+  height: 100px;
+  background-color: #a6a6a6;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.material-icons {
+  display: none;
+}
+
+header .maun_sprite {
+  display: flex;
+}
+._maun_sprite {
+  right: 0;
+}
+
+header .maun_sprite .menu {
+  float: right;
+  margin-top: 40px;
+  position: relative;
+}
+
+header .maun_sprite .menu li {
+  float: left;
+  margin-right: 30px;
+}
+
+header .maun_sprite ol {
+  display: none;
+  position: absolute;
+
+  background-color: #a6a6a6;
+}
+
+header .maun_sprite ol li {
+  background-color: #a6a6a6;
+  margin: 10px 20px;
+}
+
+header .maun_sprite .menu li a {
+  width: 100px;
+  height: 30px;
+  color: #d7d7d9;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .maun_sprite .menu li:first-child a {
+  margin-bottom: 10px;
+}
+
+header .maun_sprite .menu li:hover a {
+  color: #8c2f1b;
+}
+
+header .maun_sprite .menu li:nth-child(1):hover ol a {
+  color: #f2f2f2;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+header .maun_sprite .menu li ol .traning-btn1:hover a {
+  color: #8c2f1b;
+}
+
+header .maun_sprite .menu li ol .traning-btn2:hover a {
+  color: #8c2f1b;
+}
+
+header .maun_sprite .menu li ol .traning-btn3:hover a {
+  color: #8c2f1b;
+}
+
+header .maun_sprite ol .traning-btn3 {
+  margin-bottom: 20px;
+}
+header .maun_sprite .sprite {
+  display: flex;
+  margin-top: 40px;
+}
+
+header .maun_sprite .sprite li {
+  margin-right: 10px;
+}
+
+.member {
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sprite.png);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.search {
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sprite.png);
+  cursor: pointer;
+}
+.sh-cart {
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/sprite.png);
+  cursor: pointer;
+}
+.member {
+  background-position: 0 0;
+}
+.search {
+  background-position: 0 -38px;
+}
+.sh-cart {
+  background-position: 0 -75px;
+}
+.member:hover {
+  background-position: -37px 0;
+}
+.search:hover {
+  background-position: -37px -38px;
+}
+.sh-cart:hover {
+  background-position: -37px -75px;
+}
+/*--------foot-------*/
+
+footer {
+  background-color: #a6a6a6;
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  width: 600px;
+
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+footer li {
+  flex-grow: 1;
+}
+
+footer a {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #8c2f1b;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color: #0d0d0d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*------------第一部分大圖--------------*/
+
+.main-pic {
+  margin-top: 100px;
+  width: 1200px;
+}
+
+.main-pic img {
+  display: block;
+  width: 1200px;
+
+  position: fixed;
+  top: 100px;
+  z-index: -1;
+
+  animation: mainpic 2.5s forwards;
+}
+
+@keyframes mainpic {
+  0% {
+    transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-pic h1 {
+  position: absolute;
+  left: 40px;
+  top: 400px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #d7d7d9;
+  opacity: 0;
+
+  animation: bigtitle 5s 1.5s forwards;
+}
+
+@keyframes bigtitle {
+  0% {
+    transform: translateX(-170px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*-----------第一部分calisthenics介紹-----------*/
+
+.introduction {
+  margin-top: 700px;
+  padding: 20px;
+  background-color: #262626;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.introd-pic {
+  width: 500px;
+  overflow: hidden;
+}
+.introd-pic ul {
+  width: 2500px;
+
+  position: relative;
+
+  animation: slider 15s infinite;
+}
+
+.introd-pic ul li {
+  width: 500px;
+  float: left;
+}
+
+.introd-pic img {
+  display: block;
+}
+
+.slider-pic {
+  opacity: 0;
+}
+
+.introd-pic .introd-pic-RWD1 {
+  display: none;
+}
+.introd-pic .introd-pic-RWD2 {
+  display: none;
+}
+.introd-main {
+  width: 50%;
+  opacity: 0;
+}
+
+.introd-main h1 {
+  margin-bottom: 30px;
+}
+
+.introd-main p {
+  text-indent: 2em;
+}
+
+@keyframes slider {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: -500px;
+  }
+  40% {
+    left: -1000px;
+  }
+  60% {
+    left: -1500px;
+  }
+  80% {
+    left: -2000px;
+  }
+}
+/*-----------第二部分現代街頭健身-----------*/
+
+.str-workout-main {
+  background-image: url(../img/woman.JPG);
+  background-size: cover;
+  width: 1200px;
+  height: 700px;
+  padding: 160px 570px 50px 100px;
+  box-sizing: border-box;
+}
+
+.str-workout-main-text {
+  opacity: 0;
+}
+
+.str-workout h1 {
+  padding-bottom: 300px;
+}
+.str-workout p {
+  text-indent: 2em;
+  padding-right: 50px;
+}
+.str-workout-main a {
+  color: #8c2f1b;
+  font-weight: bold;
+}
+
+.Hannibal {
+  display: inline;
+}
+
+.str-workout-main a:hover {
+  font-weight: bold;
+  color: #bf7b3f;
+}
+/*--------第三部分blog,training------*/
+.nav-blog-novtrain {
+  display: flex;
+  background-color: #595959;
+}
+
+.nav-blog {
+  width: 650px;
+  height: 550px;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  background-color: #262626;
+
+  opacity: 0;
+}
+
+.nav-blog a {
+  font-size: 42px;
+  font-weight: bold;
+  color: #bf7b3f;
+
+  position: absolute;
+  left: 40px;
+  top: 30px;
+}
+.nav-blog a:hover {
+  color: #f2f2f2;
+}
+
+.nav-blog img {
+  border-radius: 20px;
+  display: block;
+  position: absolute;
+  left: 140px;
+  top: 130px;
+}
+
+.nav-novtrain {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+}
+
+.nav-novtrain a {
+  width: 370px;
+  height: 120px;
+  font-size: 42px;
+  font-weight: bold;
+  background-color: #d7d7d9;
+  line-height: 120px;
+  color: #8c2f1b;
+  border-radius: 20px;
+
+  position: absolute;
+  left: 50px;
+  top: 400px;
+  z-index: 2;
+}
+
+.blog-a {
+}
+
+.nav-novtrain a:hover {
+  background-color: #bf7b3f;
+  color: #f2f2f2;
+}
+
+.nav-novtrain img {
+  border-radius: 20px;
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 70px;
+}
+
+/*<!-- ---------酷炫招式----------- -->*/
+
+.nav-master {
+  background-color: #d7d7d9;
+  width: 1200px;
+}
+
+.nav-master h1 {
+  color: #8c2f1b;
+  text-align: center;
+}
+
+.nav-master ul {
+  display: flex;
+  padding-bottom: 20px;
+  margin: 0 20px;
+
+  opacity: 0;
+}
+
+.nav-master ul li {
+  height: 380px;
+  background-size: cover;
+  filter: saturate(0);
+  transition: 0.8s;
+}
+
+.nav-master a {
+  display: none;
+}
+
+.nav-master ul li:hover {
+  filter: saturate(1);
+}
+.nav-master ul li:hover a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-shadow: 3px 3px 3px #595959;
+}
+.nav-master ul li:nth-child(4):hover a {
+  color: #bf7b3f;
+  text-shadow: 3px 3px 3px #f2f2f2;
+}
+.onearms {
+  background-image: url(../img/onearmpullup-1.png);
+  background-position: center;
+  flex-grow: 1;
+}
+
+.planche {
+  background-image: url(../img/planche-Osvaldo-Lugones.png);
+  background-position: center;
+  flex-grow: 2;
+}
+
+.handstand {
+  background-image: url(../img/handstand-Mike-Smart.png);
+  background-position: center;
+  flex-grow: 1;
+}
+
+.humanflag {
+  background-image: url(../img/humanflag-Madeleine-Leander.png);
+  background-position: left;
+  flex-grow: 1;
+}
+
+.muscleup {
+  background-image: url(../img/muscleup-Andrea-Larosa.png);
+  background-position: center;
+  flex-grow: 1;
+}
+
+.frontlever {
+  background-image: url(../img/frontlever-Chumakova-Tatyana.png);
+  background-position: right;
+  flex-grow: 1;
+}
+
+.onearms:hover {
+  flex-grow: 2;
+}
+
+.planche:hover {
+  flex-grow: 2;
+}
+
+.handstand:hover {
+  flex-grow: 2;
+}
+
+.humanflag:hover {
+  flex-grow: 2;
+}
+
+.muscleup:hover {
+  flex-grow: 2;
+}
+
+.frontlever:hover {
+  flex-grow: 2;
+}
+
+/*------ 商品區 ------*/
+.product {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #262626;
+}
+
+.product ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.product-ul {
+  opacity: 0;
+}
+.product li img {
+  filter: sepia(0.7);
+  transition: 0.5s;
+}
+
+.product li:hover img {
+  filter: sepia(0);
+  border: 5px solid #d7d7d9;
+}
+
+.product ul + a {
+  width: 750px;
+  background-color: #d7d7d9;
+  color: #8c2f1b;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.product-main a:hover {
+  background-color: #595959;
+  color: #f2f2f2;
+}
+
+/*------ 神人區 ------->*/
+
+.godman {
+  height: 520px;
+  background-color: #595959;
+}
+.godman h1 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.godman ul {
+  display: flex;
+  justify-content: space-around;
+}
+.godmanUl {
+  opacity: 0;
+}
+
+.godman li {
+  width: 200px;
+  height: 300px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+.godman img {
+  display: block;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+}
+.godman a {
+  margin: 0 auto;
+  color: #f2f2f2;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.godman-card-1 {
+  position: relative;
+}
+
+.godman-card {
+  position: absolute;
+  perspective: 500px;
+  backface-visibility: hidden;
+  transition: transform 1s;
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+.godman-card-1:hover .front {
+  transform: rotateY(180deg);
+}
+.godman-card-2:hover .front {
+  transform: rotateY(180deg);
+}
+.godman-card-3:hover .front {
+  transform: rotateY(180deg);
+}
+
+.godman-card-1:hover .back {
+  transform: rotateY(0);
+}
+.godman-card-2:hover .back {
+  transform: rotateY(0);
+}
+.godman-card-3:hover .back {
+  transform: rotateY(0);
+}
+
+/*----block基本寬高設定---*/
+.wrapper header .maun_sprite .tran-btn {
+  color: #8c2f1b;
+}
+.nav-standard {
+  width: 600px;
+  height: 600px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+/*----training第一頁---*/
+header .maun_sprite .menu .train-btn {
+  color: #8c2f1b;
+}
+.train-intro {
+  margin-top: 100px;
+  background-color: #262626;
+}
+
+.train-intro ul {
+  display: flex;
+}
+
+.train-intro ul li {
+  width: 600px;
+  height: 600px;
+  display: flex;
+}
+
+.train-intro-pic {
+  margin: auto;
+}
+
+.train-intro-pic img {
+  display: block;
+}
+.train-intro-text {
+  margin: auto;
+}
+
+.train-intro-text h1 {
+  text-align: center;
+}
+
+.train-intro-text p {
+  text-indent: 2em;
+  margin: 0 40px;
+}
+.train-intro-text p + p {
+  font-size: 36px;
+  color: #8c2f1b;
+  font-weight: bold;
+  text-indent: 0;
+  text-align: center;
+}
+/* ---第二區塊---*/
+
+.train-novic {
+  background-color: #595959;
+}
+.train-novic ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.train-novic ul li {
+  width: 600px;
+  height: 520px;
+  display: flex;
+}
+iframe {
+  height: 400px;
+}
+
+/*----基礎推力教學-----*/
+
+.novice-push-text {
+  margin: auto;
+}
+
+.novice-push-text h1 {
+  text-align: center;
+}
+
+.novice-push-text p {
+  margin: 0 40px;
+}
+
+.novice-push-film {
+  margin: auto;
+}
+
+.novice-push-film iframe {
+  border: 1px solid #fff;
+}
+
+/* ------- 胸肌訓練 -------- */
+.train-chest-text {
+  margin: auto;
+}
+
+.train-chest-text h1 {
+  text-align: center;
+}
+
+.train-chest-text p {
+  margin: 0 40px;
+}
+
+.train-chest-film {
+  margin: auto;
+}
+
+.train-chest-film iframe {
+  border: 1px solid #fff;
+}
+
+/*---------基礎拉力教學---------*/
+
+.basic-pull-text {
+  margin: auto;
+}
+
+.basic-pull-text h1 {
+  text-align: center;
+}
+
+.basic-pull-text p {
+  margin: 0 40px;
+}
+
+.basic-pull-film {
+  margin: auto;
+}
+
+.basic-pull-film iframe {
+  border: 1px solid #fff;
+}
+
+/*-------引體向上基礎教學*-------*/
+
+.basic-pullup-text {
+  margin: auto;
+}
+
+.basic-pullup-text h1 {
+  text-align: center;
+}
+
+.basic-pullup-text p {
+  margin: 0 40px;
+}
+
+.basic-pullup-film {
+  margin: auto;
+}
+
+.basic-pullup-film iframe {
+  border: 1px solid #fff;
+}
+
+/*-----引體向上訓練常見誤區-----*/
+
+.pullup-mistake-text {
+  margin: auto;
+}
+
+.pullup-mistake-text h1 {
+  text-align: center;
+}
+
+.pullup-mistake-text p {
+  margin: 0 40px;
+}
+
+.pullup-mistake-film {
+  margin: auto;
+}
+
+.pullup-mistake-film iframe {
+  border: 1px solid #fff;
+}
+
+/*----------商品區總攬----------*/
+.wrapper header .maun_sprite .product-btn {
+  color: #8c2f1b;
+}
+.see-more {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 20px;
+  color: #d7d7d9;
+  background-color: #8c2f1b;
+  border-radius: 10px;
+
+  margin-bottom: 30px;
+}
+.see-more:hover {
+  background-color: #bf7b3f;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+/*<!--  商品區第一塊-->*/
+.product-list-1 {
+  background-color: #595959;
+  margin-top: 100px;
+}
+
+.product-list-1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding-top: 30px;
+}
+.product-list-1 li {
+  margin: 30px 0;
+}
+
+.product-list-1 li a {
+  width: 360px;
+  height: 360px;
+  transition: 1.2s;
+}
+
+.product-list-1 h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+.door-pull-up {
+  background-image: url(../img/product/product-door-pull-up-bar-360-360.png);
+}
+.parallettes {
+  background-image: url(../img/product/parallettes-360-360.png);
+}
+.bands {
+  background-image: url(../img/product/bands-360-360.png);
+}
+
+.door-pull-up:hover {
+  background-image: url(../img/product/product-door-pull-up-bar-360-360-h.png);
+}
+
+.parallettes:hover {
+  background-image: url(../img/product/parallettes-360-360-h.png);
+}
+
+.bands:hover {
+  background-image: url(../img/product/bands-360-360-h.png);
+}
+
+.push-up-bars {
+  background-image: url(../img/product/push-up-bars-360-360.png);
+}
+.rings {
+  background-image: url(../img/product/rings-360-360.png);
+}
+.weight-vest {
+  background-image: url(../img/product/weight-vest-360-360.png);
+}
+
+.push-up-bars:hover {
+  background-image: url(../img/product/push-up-bars-360-360-h.png);
+}
+
+.rings:hover {
+  background-image: url(../img/product/rings-360-360-h.png);
+}
+
+.weight-vest:hover {
+  background-image: url(../img/product/weight-vest-360-360-h.png);
+}
+
+/*-------門上槓商品頁面-------*/
+
+/*-------麵包屑-------*/
+
+.Bread-Crumbs {
+  width: 1200px;
+  height: 90px;
+  background-color: #595959;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.Bread-Crumbs li {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.Bread-Crumbs a {
+  font-size: 16px;
+  color: #d7d7d9;
+  font-weight: bold;
+}
+
+.Bread-Crumbs p {
+  font-size: 16px;
+  color: #d7d7d9;
+  font-weight: bold;
+  border-bottom: 1.5px solid #d7d7d9;
+}
+.Bread-Crumbs li:nth-child(2) {
+  color: #d7d7d9;
+}
+
+.Bread-Crumbs a:hover {
+  color: #bf7b3f;
+}
+
+/*--------門上槓介紹--------*/
+
+.nev1-door-pull-up-bar-product {
+  background-color: #595959;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nev1-door-pull-up-bar-text {
+  background-color: #595959;
+  margin: 0 auto;
+}
+
+.nev1-door-pull-up-bar-text h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nev1-door-pull-up-bar-text-p {
+  width: 500px;
+  background-color: #262626;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+}
+
+.nev1-door-pull-up-bar-text-p p {
+  color: #d7d7d9;
+  margin: 20px 30px;
+}
+.nev1-door-pull-up-bar-text-p p:nth-child(2) {
+  font-size: 25px;
+  color: #d7d7d9;
+  background-color: #8c2f1b;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+
+.nev1-door-pull-up-bar-text a {
+}
+
+.nev1-door-pull-up-bar-text li:hover a {
+}
+
+.nev1-door-pull-up-bar-text img {
+  border-radius: 10px;
+}
+.nev1-door-pull-up-bar-text li:hover img {
+  opacity: 1;
+}
+
+.product-door-pull-up-bar-price {
+}
+
+.shop-btn {
+  margin-top: 20px;
+  display: flex;
+}
+
+.purchase {
+  width: 120px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #bf7b3f;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.shpo-cart {
+  width: 120px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #bf7b3f;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.purchase:hover {
+  background-color: #8c2f1b;
+}
+
+.shpo-cart:hover {
+  background-color: #8c2f1b;
+}
+
+.nev1-door-pull-up-bar-pic {
+  background-color: #595959;
+  margin: 0 auto;
+}
+
+.nev1-door-pull-up-bar-pic ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.nev1-door-pull-up-bar-pic ul img {
+  width: 90px;
+  opacity: 0.5;
+}
+
+.nev1-door-pull-up-bar-pic ul li {
+  margin-top: 10px;
+}
+
+.nev1-door-pull-up-bar-pic li:hover img {
+  opacity: 1;
+}
+
+.nev1-door-pull-up-bar-pic img {
+  border-radius: 20px;
+}
+/*-------- 門上槓詳細資訊 -------- */
+.nev1-door-pull-up-bar-product-2-description {
+  background-color: #595959;
+}
+
+.nev1-door-pull-up-bar-product-2-description h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.nev1-door-pull-up-bar-product-2-description ul {
+}
+
+.nev1-door-pull-up-bar-product-2-description li {
+}
+
+.description {
+  background-color: #8c2f1b;
+  color: #f2f2f2;
+  font-style: normal;
+  padding: 2px 8px;
+}
+
+.nev1-door-pull-up-bar-product-2-description p {
+  margin: 0 30px;
+  padding: 10px 0;
+}
+
+.door-pull-up-bar-description-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nev1-door-pull-up-bar-product-2-description ul li img {
+  display: block;
+}
+
+.nev1-door-pull-up-bar-product-3-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nev1-door-pull-up-bar-product-3-description ul {
+  margin: 20px 20px;
+}
+
+.nev1-door-pull-up-bar-product-3-description li {
+  width: 600px;
+  font-size: 20px;
+  color: #f2f2f2;
+}
+
+.door-pull-up-bar-product-description {
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.door-pull-up-bar-product-description table {
+  margin: 20px 30px;
+  border: 1px solid #f2f2f2;
+  font-size: 22px;
+}
+
+.door-pull-up-bar-product-description tr {
+  border: 1px solid #f2f2f2;
+  width: 260px;
+  text-align: center;
+}
+.door-pull-up-bar-product-description td {
+  border: 1px solid #f2f2f2;
+  width: 260px;
+  text-align: center;
+}
+
+.door-pull-up-bar-product-description p {
+  font-weight: bold;
+  color: #bf7b3f;
+  font-size: 25px;
+}
+
+.table-list {
+  background-color: #8c2f1b;
+}
+
+.nev1-door-pull-up-bar-product-2-description > p:last-child {
+  /* border: 2px solid #d7d7d9; */
+  font-size: 28px;
+  /* margin-bottom: 10px; */
+  /* padding: 10px; */
+}
+
+/*--------blog list標準化格式---------*/
+
+.wrapper header .maun_sprite .menu .blog-list-btn {
+  color: #8c2f1b;
+}
+.nav-standardcard {
+  width: 520px;
+  height: 530px;
+  margin: 0 auto;
+}
+
+/*--------blog list第一區塊-------*/
+
+.blog-list {
+  margin-top: 100px;
+  display: flex;
+}
+
+.blog-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blog-list li {
+}
+
+.blog-list .blog-list-pic img {
+  margin-top: 10px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #f2f2f2;
+  background-color: #a6a6a6;
+}
+
+.blog-list .blog-list-text {
+}
+
+.blog-list .blog-list-text h3 {
+  margin: 10px 0 0 10px;
+}
+
+.blog-list .blog-list-text a {
+  font-size: 16px;
+  color: #f2f2f2;
+  margin: 10px 10px;
+  text-align: left;
+}
+.blog-list .nav-standardcard:hover {
+  border: 1px solid #f2f2f2;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+/*-- blog-2020new-losewight-start --*/
+
+.new2020-losewight {
+  margin: 100px 20px 0;
+}
+
+.new2020-losewight a {
+  color: #bf7b3f;
+}
+
+.new2020-losewight a:hover {
+  color: #f6f60f;
+}
+span {
+  font-style: italic;
+  font-weight: bold;
+  color: #266dbf;
+}
+
+b {
+  font-style: italic;
+  font-weight: bold;
+  color: #8c2f1b;
+}
+
+.elseblog-recommend {
+}
+
+.elseblog-recommend h1 {
+  text-align: center;
+}
+
+/*-----------常見問題------------*/
+.ques-btn {
+  color: #8c2f1b;
+}
+
+.nev-questions-list {
+  margin-top: 100px;
+  background-color: #595959;
+  width: 1200px;
+}
+
+.nev-questions-list h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nev-questions-list ul {
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.nev-questions-list li {
+  width: 100%;
+}
+
+.qa-title {
+  background-color: #bf7b3f;
+  color: #d7d7d9;
+  font-size: 25px;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 6px;
+}
+
+.qa-content {
+  background-color: #d7d7d9;
+  color: #262626;
+  font-size: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 6px;
+
+  display: none;
+}
+
+/*----聯絡我們----*/
+.contact-btn {
+  color: #8c2f1b;
+}
+
+.contact-us-list {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+}
+.contact-us-list > h3 {
+  text-align: center;
+  margin: 10px auto;
+}
+.contact-us-main {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-us-left {
+  width: 50%;
+}
+.contact-us-left h3 {
+  margin-left: 50px;
+}
+.contact-us-left p {
+  margin: 0 50px;
+}
+.contact-us-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-right ul {
+}
+
+.contact-us-right li {
+  margin: 10px auto;
+}
+.contact-us-name {
+  width: 40%;
+  margin: 0 10px;
+  padding: 5px;
+}
+.contact-us-email {
+  width: 40%;
+  margin: 0 10px;
+  padding: 5px;
+}
+.contact-us-message {
+  width: 90%;
+  margin: 0 10px;
+  padding: 5px;
+}
+.send {
+  display: block;
+  margin: 0 auto;
+  background-color: #8c2f1b;
+  color: #d7d7d9;
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+.send:hover {
+  background-color: #bf7b3f;
+}
+/*----------------------*/
+.wrapper header .maun_sprite .godman-btn {
+  color: #8c2f1b;
+}
+
+/*-- 神人介紹第一區塊 --*/
+.godman-block1 {
+  margin-top: 100px;
+  background-color: #262626;
+  padding-top: 40px;
+}
+.godman-block1 h1 {
+  text-align: center;
+}
+/*-- 神人介紹主區塊 --*/
+.godman-block2 {
+  background-color: #262626;
+}
+
+.nav1-godman {
+  width: 1200px;
+  height: 800px;
+}
+
+.nav1-godman h3 {
+  color: #f2f2f2;
+  text-shadow: 3px 3px 5px #0d0d0d;
+}
+
+.nav1-godman ul {
+}
+
+.nav1-godman li {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.godman-list1 {
+}
+
+.godman-list1 a {
+}
+
+.godman-list1 a h3 {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+
+  z-index: 3;
+}
+
+.andrea {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  z-index: 50;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.andrea-hover {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+.godman-list1:hover .andrea {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list1:hover .andrea-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+.godman-list2 {
+}
+
+.godman-list2 a {
+}
+
+.godman-list2 a h3 {
+  position: absolute;
+  top: 300px;
+  left: 550px;
+
+  z-index: 3;
+}
+
+.erik {
+  position: absolute;
+  top: 100px;
+  left: 520px;
+
+  z-index: 2;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.erik-hover {
+  position: absolute;
+  top: 100px;
+  left: 520px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+
+.godman-list2:hover .erik {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list2:hover .erik-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+.godman-list3 {
+}
+
+.godman-list3 a {
+}
+
+.godman-list3 a h3 {
+  position: absolute;
+  top: 300px;
+  left: 915px;
+
+  z-index: 3;
+}
+
+.mike {
+  position: absolute;
+  top: 100px;
+  left: 900px;
+
+  z-index: 2;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.mike-hover {
+  position: absolute;
+  top: 100px;
+  left: 900px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+.godman-list3:hover .mike {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list3:hover .mike-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+.godman-list4 {
+}
+
+.godman-list4 a {
+}
+
+.godman-list4 a h3 {
+  position: absolute;
+  top: 630px;
+  left: 20px;
+
+  z-index: 3;
+}
+
+.Maksim {
+  position: absolute;
+  top: 430px;
+  left: 100px;
+
+  z-index: 2;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.Maksim-hover {
+  position: absolute;
+  top: 430px;
+  left: 100px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+
+.godman-list4:hover .Maksim {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list4:hover .Maksim-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+.godman-list5 {
+}
+
+.godman-list5 a {
+}
+
+.godman-list5 a h3 {
+  position: absolute;
+  top: 630px;
+  left: 480px;
+
+  z-index: 3;
+}
+
+.osvaldo {
+  position: absolute;
+  top: 430px;
+  left: 520px;
+
+  z-index: 2;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.osvaldo-hover {
+  position: absolute;
+  top: 430px;
+  left: 520px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+
+.godman-list5:hover .osvaldo {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list5:hover .osvaldo-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+.godman-list6 {
+}
+
+.godman-list6 a {
+}
+
+.godman-list6 a h3 {
+  position: absolute;
+  top: 630px;
+  left: 830px;
+
+  z-index: 3;
+}
+
+.giampaolo {
+  position: absolute;
+  top: 430px;
+  left: 900px;
+
+  z-index: 2;
+  transition: 1s;
+
+  box-shadow: 2px 2px 50px #d7d7d9;
+}
+
+.giampaolo-hover {
+  position: absolute;
+  top: 430px;
+  left: 900px;
+
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+}
+
+.godman-list6:hover .giampaolo {
+  transform: scale(0.1);
+  opacity: 0;
+}
+.godman-list6:hover .giampaolo-hover {
+  transform: scale(1.6);
+  opacity: 1;
+  box-shadow: 2px 2px 50px #8c2f1b;
+}
+
+.construct {
+  margin-top: 100px;
+  background-color: #262626;
+}
+
+.nev-construct {
+  width: 700px;
+  height: 300px;
+  background-color: #595959;
+  margin: 0 auto;
+}
+
+.nev-construct h1 {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.nev-construct h3 {
+  text-align: center;
+  color: #d7d7d9;
+}
