@@ -238,71 +238,71 @@ $(document).ready(function () {
 
 // RWD部分
 
-var introRwdPic = TweenMax.to(".introd-pic", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".introduction",
-})
-  .setTween(introRwdPic)
-  .addTo(controller);
+// var introRwdPic = TweenMax.to(".introd-pic", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".introduction",
+// })
+//   .setTween(introRwdPic)
+//   .addTo(controller);
 
-// ---------------現代街頭健身
-var strworkText = TweenMax.to(".str-workout-main-text", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".str-workout-main",
-  offset: 200,
-})
-  .setTween(strworkText)
-  .addTo(controller);
+// // ---------------現代街頭健身
+// var strworkText = TweenMax.to(".str-workout-main-text", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".str-workout-main",
+//   offset: 200,
+// })
+//   .setTween(strworkText)
+//   .addTo(controller);
 
-// -------------blog,training
-var blogNav = TweenMax.to(".nav-blog", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".nav-blog-novtrain",
-})
-  .setTween(blogNav)
-  .addTo(controller);
+// // -------------blog,training
+// var blogNav = TweenMax.to(".nav-blog", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".nav-blog-novtrain",
+// })
+//   .setTween(blogNav)
+//   .addTo(controller);
 
-var novtrainNav = TweenMax.to(".nav-novtrain", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".nav-blog-novtrain",
-})
-  .setTween(novtrainNav)
-  .addTo(controller);
+// var novtrainNav = TweenMax.to(".nav-novtrain", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".nav-blog-novtrain",
+// })
+//   .setTween(novtrainNav)
+//   .addTo(controller);
 
-// ---------酷炫招式
-var navMaster = TweenMax.to(".nav-master-ul", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".nav-master",
-})
-  .setTween(navMaster)
-  .addTo(controller);
+// // ---------酷炫招式
+// var navMaster = TweenMax.to(".nav-master-ul", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".nav-master",
+// })
+//   .setTween(navMaster)
+//   .addTo(controller);
 
-// 商品區
-var productUl = TweenMax.to(".product-ul", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".product",
-})
-  .setTween(productUl)
-  .addTo(controller);
+// // 商品區
+// var productUl = TweenMax.to(".product-ul", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".product",
+// })
+//   .setTween(productUl)
+//   .addTo(controller);
 
-// 神人區
-var godmanUl = TweenMax.to(".godmanUl", 1.5, {
-  opacity: 1,
-});
-new ScrollMagic.Scene({
-  triggerElement: ".godman",
-})
-  .setTween(godmanUl)
-  .addTo(controller);
+// // 神人區
+// var godmanUl = TweenMax.to(".godmanUl", 1.5, {
+//   opacity: 1,
+// });
+// new ScrollMagic.Scene({
+//   triggerElement: ".godman",
+// })
+//   .setTween(godmanUl)
+//   .addTo(controller);
